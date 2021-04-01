@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head><title>
+
+</title>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+<script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(function() {
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 500) {
+            $(".header").addClass('smaller');
+        } else {
+            $(".header").removeClass("smaller");
+        }
+    });
+});
+    </script>
+    <style>
+        .header {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: maroon;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.header h1#logo {
+    display: inline=block;
+    height: 150px;
+    float: left;
+    margin-left:50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header nav {
+    display: inline=block;
+    float: right;
+    margin-right:50px;
+}
+.header nav a {
+    line-height: 150px;
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header nav a:hover {
+    color: white;
+}
+.header.smaller {
+    height: 75px;
+}
+.header.smaller h1#logo {
+    width: 150px;
+    height: 75px;
+    font-size: 30px;
+}
+.header.smaller nav a {
+    line-height: 75px;
+}
+
+/*-----------MEDIA QUERIES*/
+@media all and (max-width: 660px) {
+    .header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height:100px;
+        text-align: center;
+    }
+    .header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        line-height:50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    .header.smaller {
+        height: 75px;
+    }
+    .header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .header.smaller nav {
+        height: 35px;
+        line-height:35px;
+    }
+    .header.smaller nav a {
+        line-height: 35px;
+    }
+}
+    </style>
+
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+    </style>
+
+  <style>
+.footer {
+   /*position: fixed;*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:8%;
+   text-align:center;
+   background-color:maroon;
+   color: white;
+   text-align: center;
+   margin-top:42px;
+}
+</style>
+
+</head>
+<body>
+   
+
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="06AF683B" />
+</div>
+        <div>
+            <div class="header">
+    <div class="container clearfix">
+        <h1 id="logo"> <img src="assets/images/logo.png" style=" width: 138%;margin-top: 9%;" /> </h1>
+        <nav>
+            <a style="font-size:28px; color:white">Result Examination [UG/PG/B.Ed] - 2019-20</a>
+        </nav>
+    </div>
+</div>
+
+              <div id="login">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center" style=" min-height: 550px;">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="#" method="post">
+                            <h3 class="text-center text-info">Search Here</h3>
+                            <div class="form-group"  style="margin-left:10%">
+                                <label for="username" class="text-info">Course Name:</label><br>
+                               
+                                <select name="DropDownList1" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;DropDownList1\&#39;,\&#39;\&#39;)&#39;, 0)" id="DropDownList1" tabindex="1" class="form-control" style="font-weight:normal;height:40px;width:390px;">
+	<option selected="selected" value="0">Please Select Course</option>
+	<option value="M.A. 1ST SEMESTER EXAM">M.A. 1ST SEMESTER EXAM</option>
+	<option value="M.A. 3RD SEMESTER EXAM">M.A. 3RD SEMESTER EXAM</option>
+	<option value="M.COM. 1ST SEMESTER EXAM">M.COM. 1ST SEMESTER EXAM</option>
+	<option value="M.COM. 3RD SEMESTER EXAM">M.COM. 3RD SEMESTER EXAM</option>
+	<option value="M.SC. 1ST SEMESTER EXAM">M.SC. 1ST SEMESTER EXAM</option>
+	<option value="M.SC. 3RD SEMESTER EXAM">M.SC. 3RD SEMESTER EXAM</option>
+	<option value="B.COM. Part-I">B.COM. Part-I</option>
+	<option value="B.SC. Part-I">B.SC. Part-I</option>
+	<option value="Vocational Part-I">Vocational Part-I</option>
+	<option value="Vocational Part-II">Vocational Part-II</option>
+	<option value="B.A Part-III">B.A Part-III</option>
+	<option value="B.Com. PART-III">B.Com. PART-III</option>
+	<option value="B.Sc. Part-III">B.Sc. Part-III</option>
+	<option value="B.Ed.-I">B.Ed.-I</option>
+	<option value="LL.B. 3 Year Part-I">LL.B. 3 Year Part-I </option>
+	<option value="LL.B. 3 Year Part-II">LL.B. 3 Year Part-II </option>
+	<option value="LL.B. 3 Year Part-III">LL.B. 3 Year Part-III </option>
+	<option value="LL.B. 5 Year Part-I">LL.B. 5 Year Part-I </option>
+	<option value="LL.B. 5 Year Part-II">LL.B. 5 Year Part-II </option>
+	<option value="LL.B. 5 Year Part-III">LL.B. 5 Year Part-III </option>
+	<option value="LL.B. 5 Year Part-IV">LL.B. 5 Year Part-IV </option>
+	<option value="LL.B. 5 Year Part-V">LL.B. 5 Year Part-V </option>
+	<option value="B.Ed.-II-2019">B.Ed.-II</option>
+	<option value="Vocational, PART-III">Vocational, PART-III</option>
+
+</select>
+                            </div>
+                            <div class="form-group" style="margin-left:10%">
+                                <label for="password" class="text-info">Roll Number:</label><br>
+                            
+                                 <input name="TextBox1" type="text" maxlength="40" id="TextBox1" tabindex="3" CLASS="form-control" style="font-size:Larger;font-weight:bold;height:40px;width:390px;" />
+                            </div>
+                            <div class="form-group" style="margin-left:10%">
+                                <a href= "Fool.pdf" target="_blank >
+                                    <button type="button" class="btn btn-success filledBtn">Search Result</button>
+                                </a>
+                            </div>
+                            <div id="register-link" class="text-right">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+              <div class="footer">
+  <p>Copyright @2019 Magadh University</p>  <span id="LblOnlineUsers">Online Users : 104</span>
+</div>
+        </div>
+    </form>
+</body>
+
+</html>
